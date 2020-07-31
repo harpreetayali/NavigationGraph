@@ -3,8 +3,13 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 29
 
+    dataBinding
+            {
+                enabled = true
+            }
 
-    defaultConfig {
+    defaultConfig
+            {
         applicationId "com.example.navigationgraph"
         minSdkVersion 18
         targetSdkVersion 29

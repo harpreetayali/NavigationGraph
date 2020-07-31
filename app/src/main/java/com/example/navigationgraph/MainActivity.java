@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity
         bottomNavigationView = findViewById(R.id.bottom_navigation);
         navController = Navigation.findNavController(this,R.id.nav_host_fragment);
 
-        appBarConfiguration = new AppBarConfiguration.Builder(R.id.home).setDrawerLayout(drawerLayout).build();
+        appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).setDrawerLayout(drawerLayout).build();
 
 
         NavigationUI.setupActionBarWithNavController(this,navController,appBarConfiguration);
@@ -47,7 +47,8 @@ public class MainActivity extends AppCompatActivity
     }
 
     @Override
-    public boolean onSupportNavigateUp() {
+    public boolean onSupportNavigateUp()
+    {
         return NavigationUI.navigateUp(navController,appBarConfiguration);
     }
 
