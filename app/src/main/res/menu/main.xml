@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@id/home"
+        android:title="Home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:menuCategory="secondary"/>
+
+    <item
+        android:id="@+id/bookmark"
+        android:title="Bookmark"
+        android:icon="@drawable/ic_bookmark_black_24dp"
+        android:menuCategory="secondary"/>
+
+    <item
+        android:id="@+id/about"
+        android:title="About"
+        android:icon="@drawable/ic_info_black_24dp"
+        android:menuCategory="secondary"/>
+</menu>
